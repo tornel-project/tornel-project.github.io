@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<script type="text/javascript">
+  
+let params = new URLSearchParams(location.search);
+var correo = params.get('correo');
+
+</script>
+
+
+<html>
+<style type="text/css">
+	
+	body{
+		background-image: url(https://intranet.virginiogomez.cl/e_certificado/img/fondo-vg.jpg);
+		text-align: center;
+		font-family: Helvectica;
+		font-size: 20px;
+	}
+	p{
+		color: white;
+	}
+	h1{
+		color: white;
+	}
+
+		footer{
+
+		background-color: grey;
+		text-align: center;
+		width: 100%;
+        bottom: 0;
+        position:fixed;
+
+	}
+</style>
+<head>
+	<title> Técnico Entrenador Deportivo </title>
+</head>
+<body>
+<h1> Perfil Administrador </h1>
+
+<p id="parrafo2" name="parrafo2"></p>
+
+
+
+
+
+<div class="footer1">
+	<footer>
+		<p>2023 INSTITUTO PROFESIONAL VIRGINIO GÓMEZ. TODOS LOS DERECHOS RESERVADOS.</p>
+	</footer>
+</div>
+</body>
+
+
+<script type="text/javascript">
+  
+ if (correo !="") {
+
+  document.getElementById('parrafo2').innerText="Bienvenida Administradora Superpoderosa: " + correo;
+   document.getElementById('parrafo2').className="bg-info pt-2 text-uppercase"
+
+ }
+
+</script>
+
+</html>
